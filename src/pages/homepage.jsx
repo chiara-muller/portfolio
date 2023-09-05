@@ -1,8 +1,12 @@
 import React from "react";
 
+
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navbar";
-import Projects from "../components/projects/projects";
+import Intro from "./intro";
+import Projects from "./projects";
+import About from "./about";
+import Contact from "./contact";
 
 const Homepage = () => {
   return (
@@ -10,8 +14,17 @@ const Homepage = () => {
       <div className="page-content">
         <NavBar active="home" />
       </div>
-      <div className="projects-container">
+      <div className="intro-section">
+        <Intro />
+      </div>
+      <div className="about-section">
+        <About />
+      </div>
+      <div className="projects-section">
         <Projects />
+      </div>
+      <div className="contact-section">
+        <Contact />
       </div>
       <div className="page-footer">
         <Footer />

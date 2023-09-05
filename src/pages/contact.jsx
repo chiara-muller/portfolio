@@ -1,16 +1,55 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          alert('message sent successfully');
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      )
+  }
   return (
-    <div className="links-container">
-      <ul className="links-list">
-        <li className="link-item">
-          GitHub
-        </li>
-        <li className="link-item">
-          LinkedIn
-        </li>
-      </ul>
-    </div>
+      <div>
+        <h1>Contact Form</h1>
+        <form className='cf' ref={form} onSubmit={sendEmail}>
+          <div className='half left cf'>
+            <input type='text' placeholder='Name' name='user_name' />
+            <input type='email' placeholder='Email address' name='user_email' />
+          </div>
+          <div className='half right cf'>
+            <textarea name='message' type='text' placeholder='Message'></textarea>
+          </div>
+          <input type='submit' value='Submit' id='input-submit' />
+        </form>
+      </div>
   )
 }
+
+    // <div className="links-container">
+    //   <ul className="links-list">
+    //     <li className="link-item">
+    //       GitHub
+    //     </li>
+    //     <li className="link-item">
+    //       LinkedIn
+    //     </li>
+    //   </ul>
+    // </div>
+
+export default Contact;
