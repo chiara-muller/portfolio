@@ -4,9 +4,10 @@ import React from "react";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navbar";
 import Intro from "./intro";
-import Projects from "./projects";
 import About from "./about";
+import Projects from "./projects";
 import Contact from "./contact";
+import Links from "./links";
 
 const Homepage = () => {
   return (
@@ -25,6 +26,9 @@ const Homepage = () => {
       </div>
       <div className="contact-section">
         <Contact />
+      </div>
+      <div className="links-section">
+        <Links />
       </div>
       <div className="page-footer">
         <Footer />

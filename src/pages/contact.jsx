@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 
+import "./styles/contact.css";
 
 const Contact = () => {
   const form = useRef();
@@ -25,31 +26,24 @@ const Contact = () => {
       )
   }
   return (
-      <div>
-        <h1>Contact Form</h1>
-        <form className='cf' ref={form} onSubmit={sendEmail}>
-          <div className='half left cf'>
-            <input type='text' placeholder='Name' name='user_name' />
-            <input type='email' placeholder='Email address' name='user_email' />
-          </div>
-          <div className='half right cf'>
-            <textarea name='message' type='text' placeholder='Message'></textarea>
-          </div>
-          <input type='submit' value='Submit' id='input-submit' />
-        </form>
+    <React.Fragment>
+      <h1 className="title">get in touch</h1>
+      <div className="container">
+        <div className="contact-form">
+          <form ref={form} onSubmit={sendEmail}>
+            <label htmlFor="user_name">Name:</label>
+            <input type='text' name='user_name' />
+            <label htmlFor="user_email">Email:</label>
+            <input type='email' name='user_email' />
+            <label htmlFor="message">Message:</label>
+            <textarea name='message' type='text' ></textarea>
+            <input type='submit' value='Submit' id='input-submit' />
+          </form>
+        </div>
       </div>
+    </React.Fragment>
   )
 }
 
-    // <div className="links-container">
-    //   <ul className="links-list">
-    //     <li className="link-item">
-    //       GitHub
-    //     </li>
-    //     <li className="link-item">
-    //       LinkedIn
-    //     </li>
-    //   </ul>
-    // </div>
 
 export default Contact;

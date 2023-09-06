@@ -6,7 +6,7 @@ const Projects = () => {
 
   return (
     <React.Fragment>
-      <h1 className="title">projects.</h1>
+      <h1 className="title">projects</h1>
         <div className="container">
         <div className="projects-container">
           <div className="projects-details">
