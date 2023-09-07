@@ -27,8 +27,8 @@ const Contact = () => {
   }
   return (
     <React.Fragment>
-      <h1 className="title">get in touch</h1>
-      <div className="container">
+      <h1 className="contact-title">get in touch</h1>
+      <div className="contact-container">
         <div className="contact-form">
           <form ref={form} onSubmit={sendEmail}>
             <label htmlFor="user_name">Name:</label>
