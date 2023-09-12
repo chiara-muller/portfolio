@@ -37,9 +37,12 @@ const Contact = () => {
             <input type='email' name='user_email' />
             <label htmlFor="message">Message:</label>
             <textarea name='message' type='text' ></textarea>
-            <input type='submit' value='Submit' id='input-submit' />
+            <input type='submit' value='Send' id='input-submit' />
           </form>
         </div>
+      </div>
+      <div className="contact-details">
+        <p>✉️ chiaramuller@hotmail.be <br /> 📞 +32 (0) 479 18 29 65 <br /> 📍 Rue des Andrieux, 98 - 7370 Dour - Belgium </p>
       </div>
     </React.Fragment>
   )

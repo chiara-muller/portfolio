@@ -10,8 +10,8 @@ const Intro = () => {
         <div className="intro-title">
           <Typewriter
             segments={[
-              { text: "Hi, I'm Chiara", delay: 100, fontSize: '32px', fontStyle:'bold'},
-              { text: "Full-stack web developer!", delay: 100, fontSize: '24px'},
+              { text: "Hi, I'm Chiara", delay: 100, fontSize: '64px', fontStyle:'bold'},
+              { text: "Full-stack web developer!", delay: 100, fontSize: '42px'},
             ]}
           />
         </div>
