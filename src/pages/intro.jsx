@@ -1,28 +1,30 @@
 import React from "react";
 import Typewriter from "../Typewriter";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 import "./styles/intro.css";
 
-const delay = ms => new Promise(
-  resolve => setTimeout(resolve, ms)
-);
+// To create a delay for an image to appear
+
+// const delay = ms => new Promise(
+//   resolve => setTimeout(resolve, ms)
+// );
 
 
 const Intro = () => {
 
-  const [imageSrc, setImageSrc] = useState(null);
+//   const [imageSrc, setImageSrc] = useState(null);
 
-  useEffect(() => {
-    async function makeRequest() {
+//   useEffect(() => {
+//     async function makeRequest() {
 
-      await delay(0);
+//       await delay(7500);
 
-      setImageSrc("20230209_LeWagon_0042_Fotor.jpg");
-    }
+//       setImageSrc("20230209_LeWagon_0042_Fotor.jpg");
+//     }
 
-    makeRequest();
-  });
+//     makeRequest();
+//   });
 
   return (
     <React.Fragment>
@@ -36,13 +38,13 @@ const Intro = () => {
             />
           </div>
       </div>
-        <div className="img-container">
-          {imageSrc ? (
-            <img src={imageSrc} alt="me" className="img-me" />
-            ) : (
-              <p></p>
-              )}
-        </div>
+  {/* <div className="img-container">
+        {imageSrc ? (
+          <img src={imageSrc} alt="me" className="img-me" />
+          ) : (
+            <p></p>
+            )}
+      </div> */}
     </React.Fragment>
   )
 }
