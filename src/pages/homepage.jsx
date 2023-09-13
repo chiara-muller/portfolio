@@ -9,28 +9,30 @@ import Projects from "./projects";
 import Contact from "./contact";
 import Links from "./links";
 
+import "./styles/homepage.css"
+
 const Homepage = () => {
   return (
     <React.Fragment>
-      <div className="page-content">
+      <div id="page-content">
         <NavBar active="home" />
       </div>
-      <div className="intro-section">
+      <div id="intro">
         <Intro />
       </div>
-      <div className="about-section">
+      <div id="about">
         <About />
       </div>
-      <div className="projects-section">
+      <div id="projects">
         <Projects />
       </div>
-      <div className="contact-section">
+      <div id="contact">
         <Contact />
       </div>
-      <div className="links-section">
+      <div id="links">
         <Links />
       </div>
-      <div className="page-footer">
+      <div id="page-footer">
         <Footer />
       </div>
     </React.Fragment>

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-credits">
           <div className="footer-credits-text">
-            © 2023 Chiara Muller.
+            © 2023 Made with ❤ by Chiara Muller
           </div>
         </div>
       </div>

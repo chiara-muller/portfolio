@@ -1,5 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+// We could have used Link and it would have redirected us to another page
+// import { Link } from "react-router-dom";
+
+
 
 import "./styles/navBar.css";
 
@@ -19,7 +23,8 @@ const NavBar = (props) => {
                     : "nav-item"
                 }
               >
-                <Link to="/">Home</Link>
+                {/* <Link to="/">Home</Link> */}
+                <a href="#intro">Home</a>
               </li>
               <li
                 className= {
@@ -28,7 +33,8 @@ const NavBar = (props) => {
                     : "nav-item"
                 }
               >
-                <Link to="/about">About</Link>
+                {/* <Link to="/about">About</Link> */}
+                <a href="#about">About</a>
               </li>
               <li
                 className= {
@@ -37,7 +43,8 @@ const NavBar = (props) => {
                     : "nav-item"
                 }
               >
-                <Link to="/projects">Projects</Link>
+                {/* <Link to="/projects">Projects</Link> */}
+                <a href="#projects">Projects</a>
               </li>
               <li
                 className= {
@@ -46,7 +53,8 @@ const NavBar = (props) => {
                     : "nav-item"
                 }
               >
-                <Link to="/contact">Contact</Link>
+                {/* <Link to="/contact">Contact</Link> */}
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
