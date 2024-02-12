@@ -3,12 +3,25 @@ import styled from "styled-components";
 export default function Card() {
   return (
     <CardStyled>
-      <img src="" alt="" />
-      <div>title</div>
+      <div className="image-container">
+        <img src="" alt="" />
+      </div>
+      <h3>Project title</h3>
       <hr />
-      <div>text</div>
-      <div>stack</div>
-      <div>links</div>
+      <p>text</p>
+      <div className="stack-container">
+        <ul>
+          <li>stack</li>
+          <li>stack</li>
+          <li>stack</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>github</li>
+          <li>link</li>
+        </ul>
+      </div>
     </CardStyled>
   )
 }
@@ -20,4 +33,23 @@ const CardStyled = styled.div`
   height: 400px;
   display: flex;
   flex-direction: column;
+
+  .image-container {
+    height: 220px;
+  }
+
+  hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid black;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+    }
+  }
+
 `;
