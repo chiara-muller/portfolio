@@ -32,18 +32,16 @@ export default function Projects() {
 
 const ProjectsStyled = styled.div`
 
-  display: block;
   margin: 0;
   display: flex;
 	justify-content: center;
   align-items: center;
-
+  height: 750px;
 
   .projects-container {
     display: flex;
     flex-direction: column;
     width: 900px;
-    height: 900px;
   }
 
   .projects-hr {
