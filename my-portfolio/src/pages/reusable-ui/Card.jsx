@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Card({id, title, imageSource, description, stack, Icon, className}) {
+export default function Card({id, title, imageSource, description, stack, Icon, className, link}) {
   return (
     <CardStyled key={id} className={className}>
       <div className="image-container">
@@ -15,8 +15,8 @@ export default function Card({id, title, imageSource, description, stack, Icon, 
         <p className="stack">{stack[2]}</p>
       </div>
       <div className="link-container">
-        <a className="link" href="http://github.com">{Icon[0]}</a>
-        <a className="link" href="http://github.com">{Icon[1]}</a>
+        <a className="link" target="_blank" rel="noreferrer" href={link[0]}>{Icon[0]}</a>
+        <a className="link" target="_blank" rel="noreferrer" href={link[1]}>{Icon[1]}</a>
       </div>
     </CardStyled>
   )

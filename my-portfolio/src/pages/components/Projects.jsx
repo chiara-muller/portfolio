@@ -12,7 +12,7 @@ export default function Projects() {
         <h2>Projects</h2>
         <hr className="projects-hr"/>
         <div className="projects">
-          {projects.map(({id, title, imageSource, description, stack, Icon}) => {
+          {projects.map(({id, title, imageSource, description, stack, Icon, link}) => {
             return (
               <Card
                 key={id}
@@ -21,6 +21,7 @@ export default function Projects() {
                 description={description}
                 stack={stack}
                 Icon={Icon}
+                link={link}
               />
             )
           })}

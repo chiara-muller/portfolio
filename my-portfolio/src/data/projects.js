@@ -9,7 +9,8 @@ export const PROJECTS = [
     title: "La Casa Sophia - WIP",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     stack: ["REACT", "SHOPIFY"],
-    Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>]
+    Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>],
+    link: ["https://github.com/chiara-muller/la-casa-sofia", ""]
   },
   {
     id: "2",
@@ -17,7 +18,8 @@ export const PROJECTS = [
     title: "Be My Burger",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     stack: ["REACT", "FIREBASE"],
-    Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>]
+    Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>],
+    link: ["https://github.com/chiara-muller/be-my-burger", "https://be-my-burger.vercel.app"]
   },
   {
     id: "3",
@@ -25,7 +27,8 @@ export const PROJECTS = [
     title: "Trip It Easy",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     stack: ["RUBY", "RAILS", "HEROKU"],
-    Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>]
+    Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>],
+    link: ["https://github.com/chiara-muller/TripItEasy", "https://tripiteasy.herokuapp.com/"]
   },
   {
     id: "4",
@@ -33,7 +36,8 @@ export const PROJECTS = [
     title: "Connect 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     stack: ["HTML", "CSS", "JAVASCRIPT"],
-    Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>]
+    Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>],
+    link: ["https://github.com/chiara-muller/connect4", "https://chiara-muller.github.io/connect4/"]
   },
 
 ]
