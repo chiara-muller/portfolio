@@ -10,17 +10,13 @@ export default function Card() {
       <hr />
       <p>text</p>
       <div className="stack-container">
-        <ul>
-          <li>stack</li>
-          <li>stack</li>
-          <li>stack</li>
-        </ul>
+        <p className="stack">stack</p>
+        <p className="stack">stack</p>
+        <p className="stack">stack</p>
       </div>
-      <div>
-        <ul>
-          <li>github</li>
-          <li>link</li>
-        </ul>
+      <div className="link-container">
+        <a className="link" href="http://github.com">github</a>
+        <a className="link" href="http://github.com">github</a>
       </div>
     </CardStyled>
   )
@@ -44,12 +40,18 @@ const CardStyled = styled.div`
     border-top: 1px solid black;
   }
 
-  ul {
+  .stack-container {
     display: flex;
+     .stack {
+      padding-right: 15px;
+     }
+  }
 
-    li {
-      list-style: none;
-    }
+  .link-container {
+    display: flex;
+      .link {
+        padding-right: 15px;
+      }
   }
 
 `;
