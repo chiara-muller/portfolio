@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
-export default function Card() {
+export default function Card({id, title, imageSource, description, stack, Icon, className}) {
   return (
-    <CardStyled>
+    <CardStyled key={id} className={className}>
       <div className="image-container">
-        <img src="" alt="" />
+        <img src={imageSource} alt="project" />
       </div>
-      <h3>Project title</h3>
-      <hr />
-      <p>text</p>
+      <h3>{title}</h3>
+      <hr className="card-hr"/>
+      <p>{description}</p>
       <div className="stack-container">
-        <p className="stack">stack</p>
-        <p className="stack">stack</p>
-        <p className="stack">stack</p>
+        <p className="stack">{stack[0]}</p>
+        <p className="stack">{stack[1]}</p>
+        <p className="stack">{stack[2]}</p>
       </div>
       <div className="link-container">
-        <a className="link" href="http://github.com">github</a>
-        <a className="link" href="http://github.com">github</a>
+        <a className="link" href="http://github.com">{Icon[0]}</a>
+        <a className="link" href="http://github.com">{Icon[1]}</a>
       </div>
     </CardStyled>
   )
@@ -24,17 +24,27 @@ export default function Card() {
 
 const CardStyled = styled.div`
 
-  border: 2px solid red;
-  width: 300px;
-  height: 400px;
+  /* border: 2px solid red; */
+  width: 200px;
+  height: 450px;
   display: flex;
   flex-direction: column;
 
   .image-container {
-    height: 220px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 300px;
+    max-height: 150px;
+    min-height: 150px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
   }
 
-  hr {
+  .card-hr {
     width: 100%;
     border: none;
     border-top: 1px solid black;
@@ -42,16 +52,15 @@ const CardStyled = styled.div`
 
   .stack-container {
     display: flex;
-     .stack {
-      padding-right: 15px;
-     }
+    gap: 15px;
   }
 
   .link-container {
     display: flex;
-      .link {
-        padding-right: 15px;
-      }
+    gap: 15px;
+    .link {
+      color: black;
+    }
   }
 
 `;

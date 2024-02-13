@@ -6,7 +6,7 @@ export default function About() {
     <AboutStyled>
       <div className="about-container">
         <h2 className="about-title">About</h2>
-        <hr />
+        <hr className="about-hr"/>
         <p className="about-text">
           Freshly graduated from Le Wagon Melbourne's Web Development bootcamp. 🚀
           My toolkit includes Ruby, Rails, JavaScript, and React, and I'm ready to dive into the world of coding.
@@ -34,7 +34,7 @@ const AboutStyled = styled.div`
     width: 900px;
   }
 
-  hr {
+  .about-hr {
     border: 1px solid black;
     width: 30%;
     margin-left: 0;
@@ -42,6 +42,7 @@ const AboutStyled = styled.div`
 
   .about-text {
     line-height: 30px;
+    text-align: justify;
   }
 
 `;

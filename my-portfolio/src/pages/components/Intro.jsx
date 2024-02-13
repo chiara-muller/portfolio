@@ -6,7 +6,7 @@ export default function Intro() {
     <IntroStyled>
       <div className="intro-container">
         <h1 className="intro-title">CHIARA MULLER</h1>
-        <hr />
+        <hr className="intro-hr"/>
         <p className="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget finibus urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere malesuada</p>
       </div>
     </IntroStyled>
@@ -45,7 +45,7 @@ const IntroStyled = styled.div`
     color: white;
   }
 
-  hr {
+  .intro-hr {
     border: 1px solid white;
     width: 30%;
     margin-left: 0;
