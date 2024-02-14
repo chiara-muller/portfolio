@@ -4,33 +4,29 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-// import Links from "./components/Links";
 import Footer from "./components/Footer";
 
 export default function Homepage() {
   return (
     <React.Fragment>
-      <div id="page-content">
-        <Navbar active="home" />
-      </div>
-      <div id="intro">
+      <section id="page-content">
+        <Navbar />
+      </section>
+      <section id="intro">
         <Intro />
-      </div>
-      <div id="about">
+      </section>
+      <section id="about">
         <About />
-      </div>
-      <div id="projects">
+      </section>
+      <section id="projects">
         <Projects />
-      </div>
-      <div id="contact">
+      </section>
+      <section id="contact">
         <Contact />
-      </div>
-      {/* <div id="links">
-        <Links />
-      </div> */}
-      <div id="page-footer">
+      </section>
+      <section id="page-footer">
         <Footer />
-      </div>
+      </section>
     </React.Fragment>
   )
 }

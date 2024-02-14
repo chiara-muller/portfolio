@@ -1,13 +1,22 @@
 import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
 
 export default function NavbarLinks() {
   return (
     <NavbarLinksStyled>
-      <button>Home</button>
-      <button>About</button>
-      <button>Projects</button>
-      <button>Contact</button>
+      <AnchorLink href="#intro">
+        <button>Home</button>
+      </AnchorLink>
+      <AnchorLink href="#about">
+        <button>About</button>
+      </AnchorLink>
+      <AnchorLink href="#projects">
+        <button>Projects</button>
+      </AnchorLink>
+      <AnchorLink href="#contact">
+        <button className="contact-button">Contact</button>
+      </AnchorLink>
     </NavbarLinksStyled>
   )
 }
@@ -28,11 +37,11 @@ const NavbarLinksStyled  = styled.div`
     font-size: 16px;
   }
 
-  button:nth-child(4) {
+  .contact-button {
     background-color: black;
     color: white;
     border-radius: 5px;
-    height: 50%;
+    height: 30px;
     margin-left: 20px;
   }
 `;
