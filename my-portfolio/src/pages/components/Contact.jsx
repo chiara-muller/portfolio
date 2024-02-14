@@ -47,9 +47,6 @@ export default function Contact() {
           </div>
         </form>
       </div>
-      {/* <div className="contact-details">
-        <p>✉️ chiaramuller@hotmail.be <br /> 📞 +32 (0) 479 18 29 65 <br /> 📍 Rue des Andrieux, 98 - 7370 Dour - Belgium </p>
-      </div> */}
     </ContactStyled>
   )
 }

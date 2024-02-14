@@ -4,7 +4,7 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Links from "./components/Links";
+// import Links from "./components/Links";
 import Footer from "./components/Footer";
 
 export default function Homepage() {
@@ -25,9 +25,9 @@ export default function Homepage() {
       <div id="contact">
         <Contact />
       </div>
-      <div id="links">
+      {/* <div id="links">
         <Links />
-      </div>
+      </div> */}
       <div id="page-footer">
         <Footer />
       </div>
