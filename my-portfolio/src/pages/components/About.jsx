@@ -8,12 +8,16 @@ export default function About() {
         <h2 className="about-title">About</h2>
         <hr className="about-hr"/>
         <p className="about-text">
-          Freshly graduated from Le Wagon Melbourne's Web Development bootcamp. 🚀
-          My toolkit includes Ruby, Rails, JavaScript, and React, and I'm ready to dive into the world of coding.
-          While my journey in tech began just last year, my passion for it has been burning bright ever since. I'm motivated, eager to learn, and excited to gain real-world experience in web development.
-          Before this exciting tech adventure, I served up smiles in the hospitality and events industry. Those years taught me invaluable skills in teamwork, communication, and customer satisfaction – all of which I'm eager to bring to my new tech career. 💼🌟
-          I'm comfortable taking on challenges in both full-stack and front-end development. I find my strengths in continuous learning, effective problem-solving, and the creation of user-friendly web experiences.
-          Let's work together! 🌐💪
+         Recently graduated from Le Wagon Melbourne's Web Development bootcamp, I'm equipped with skills in Ruby, Rails, JavaScript, and React, ready to embark on my coding journey.
+         <br />
+         Before diving into tech, I gained valuable experience in customer service and event management, honing teamwork, communication, and problem-solving skills.
+         Additionally, my extensive travels have fostered a strong sense of autonomy and adaptability, enriching my problem-solving abilities and providing me with diverse cultural insights.
+         This unique blend of experiences equips me to tackle challenges creatively and thrive in dynamic environments.
+         <br />
+         I am now excited to apply these skills to my new career in web development.
+         Proficient in both front-end and full-stack development, I thrive on continuous learning and creating user-friendly web experiences.
+         <br />
+         Let's collaborate and build something amazing together!
         </p>
       </div>
     </AboutStyled>
@@ -28,6 +32,12 @@ const AboutStyled = styled.div`
   align-items: center;
   /* height: 750px; */
   min-height: 70vh;
+
+  br {
+    content: " ";
+    display: block;
+    margin: 20px 0;
+  }
 
   .about-container {
     display: flex;
