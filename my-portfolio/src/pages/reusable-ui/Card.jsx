@@ -8,7 +8,9 @@ export default function Card({id, title, imageSource, description, stack, Icon, 
       </div>
       <h3>{title}</h3>
       <hr className="card-hr"/>
-      <p>{description}</p>
+      <div className="description-container">
+        <p className="description">{description}</p>
+      </div>
       <div className="stack-container">
         <p className="stack">{stack[0]}</p>
         <p className="stack">{stack[1]}</p>
@@ -48,6 +50,11 @@ const CardStyled = styled.div`
     width: 100%;
     border: none;
     border-top: 1px solid black;
+  }
+
+  .description-container {
+    height: 100px;
+    min-height: 100px;
   }
 
   .stack-container {
