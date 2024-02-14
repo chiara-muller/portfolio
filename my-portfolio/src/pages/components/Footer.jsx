@@ -5,11 +5,6 @@ import { FiPhone } from "react-icons/fi";
 export default function Footer() {
   return (
       <FooterStyled>
-        <div className="dot-container">
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-        </div>
         <div className="info-container">
           <HiOutlineMail />
           <p>chiaramuller@hotmail.be</p>
@@ -18,15 +13,11 @@ export default function Footer() {
           <div className="dot"></div>
           <div className="dot"></div>
           <div className="dot"></div>
+          <div className="dot"></div>
         </div>
         <div className="info-container">
           <FiPhone />
           <p>+32 (0) 479 18 29 65</p>
-        </div>
-        <div className="dot-container">
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
         </div>
       </FooterStyled>
   )

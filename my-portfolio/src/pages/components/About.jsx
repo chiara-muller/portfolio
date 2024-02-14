@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default function About() {
   return (
-    <AboutStyled>
+    <AboutStyled id="about">
       <div className="about-container">
         <h2 className="about-title">About</h2>
         <hr className="about-hr"/>
@@ -26,7 +26,8 @@ const AboutStyled = styled.div`
   display: flex;
 	justify-content: center;
   align-items: center;
-  height: 750px;
+  /* height: 750px; */
+  min-height: 70vh;
 
   .about-container {
     display: flex;

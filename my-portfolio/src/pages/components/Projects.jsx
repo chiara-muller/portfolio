@@ -7,7 +7,7 @@ export default function Projects() {
   const projects = PROJECTS
 
   return (
-    <ProjectsStyled>
+    <ProjectsStyled id="projects">
       <div className="projects-container">
         <h2>Projects</h2>
         <hr className="projects-hr"/>
@@ -37,7 +37,8 @@ const ProjectsStyled = styled.div`
   display: flex;
 	justify-content: center;
   align-items: center;
-  height: 750px;
+  /* height: 750px; */
+  min-height: 70vh;
 
   .projects-container {
     display: flex;

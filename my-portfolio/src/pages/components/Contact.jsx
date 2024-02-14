@@ -25,7 +25,7 @@ export default function Contact() {
       )
   }
   return (
-    <ContactStyled>
+    <ContactStyled id="contact">
       <div className="contact-container">
         <h2>Contact</h2>
         <hr className="contact-hr"/>
@@ -57,7 +57,8 @@ const ContactStyled = styled.div`
   display: flex;
 	justify-content: center;
   align-items: center;
-  height: 750px;
+  /* height: 750px; */
+  min-height: 70vh;
 
   .contact-container {
     display: flex;
