@@ -6,6 +6,12 @@ export default function Projects() {
 
   const projects = PROJECTS
 
+  const handleClick = (id, array) => {
+    const obj = array.find((itemInArray) => itemInArray.id === id)
+    const link = obj.link[1]
+    window.open(link, "_blank")
+  }
+
   return (
     <ProjectsStyled id="projects">
       <div className="projects-container">
@@ -22,6 +28,7 @@ export default function Projects() {
                 stack={stack}
                 Icon={Icon}
                 link={link}
+                onClick={() => handleClick(id, projects)}
               />
             )
           })}

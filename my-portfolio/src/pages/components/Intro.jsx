@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import { FaEnvelopeSquare } from "react-icons/fa";
 
 export default function Intro() {
   return (
@@ -16,6 +17,7 @@ export default function Intro() {
           <div>
             <a className="intro-links" href="https://www.linkedin.com/in/chiara-muller/"><FaLinkedin size={30}/></a>
             <a className="intro-links" href="https://github.com/chiara-muller"><FaGithubSquare size={30}/></a>
+            <a className="intro-links" href="mailto:chiaramuller@hotmail.be"><FaEnvelopeSquare size={30}/></a>
           </div>
         </div>
         <div className="right-side">
@@ -34,20 +36,6 @@ const IntroStyled = styled.div`
   align-items: center;
   /* height: 750px; */
   min-height: 100vh;
-
-  /* &::before {
-    content: "";
-    background: url("images/intro-background.jpg") rgba(0, 0, 0, 0.7);
-    background-position: center;
-    background-size: cover;
-    filter: brightness(70%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  } */
 
   .intro-container {
     display: flex;

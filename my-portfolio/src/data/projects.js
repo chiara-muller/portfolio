@@ -23,7 +23,7 @@ export const PROJECTS = [
   },
   {
     id: "3",
-    imageSource: "/images/trip-it-easy.jpg",
+    imageSource: "/images/trip-it-easy.png",
     title: "Trip It Easy",
     description: "Web app created for discovering new places to eat/drink/visit.",
     stack: ["RUBY", "RAILS", "HEROKU"],
@@ -32,7 +32,7 @@ export const PROJECTS = [
   },
   {
     id: "4",
-    imageSource: "/images/connect-4.jpg",
+    imageSource: "/images/connect-4.png",
     title: "Connect 4",
     description: "Online version of the famous Connect 4 game.",
     stack: ["HTML", "CSS", "JAVASCRIPT"],

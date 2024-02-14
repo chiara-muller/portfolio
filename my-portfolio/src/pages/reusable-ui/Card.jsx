@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-export default function Card({id, title, imageSource, description, stack, Icon, className, link}) {
+export default function Card({id, title, imageSource, description, stack, Icon, className, link, onClick}) {
   return (
     <CardStyled key={id} className={className}>
-      <div className="image-container">
-        <img src={imageSource} alt="project" />
+      <div className="image-title-container" onClick={onClick}>
+        <div className="image-container">
+          <img src={imageSource} alt="project" />
+        </div>
+        <h3>{title}</h3>
       </div>
-      <h3>{title}</h3>
       <hr className="card-hr"/>
       <div className="description-container">
         <p className="description">{description}</p>
@@ -32,7 +34,12 @@ const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
 
+  .image-title-container {
+    cursor: pointer;
+  }
+
   .image-container {
+    position: relative;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -40,11 +47,13 @@ const CardStyled = styled.div`
     max-height: 150px;
     min-height: 150px;
       img {
+        position: absolute;
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
   }
+
 
   .card-hr {
     width: 100%;
