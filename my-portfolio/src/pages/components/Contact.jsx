@@ -138,4 +138,72 @@ const ContactStyled = styled.div`
       transition: ease-out 0.4s;
     }
   }
+
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .contact-container {
+      width: 650px;
+    }
+  }
+
+  @media all and (min-width: 480px) and (max-width: 768px) {
+
+    .contact-container {
+      width: 600px;
+    }
+
+    .contact-form {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    .input:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .input:nth-child(4) {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .submit-button {
+      width: 100%;
+    }
+
+    textarea {
+      height: 40px;
+    }
+  }
+
+  @media all and (max-width: 480px) {
+
+    .contact-container {
+      width: 300px;
+    }
+
+    .contact-form {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    .input:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .input:nth-child(4) {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .submit-button {
+      width: 100%;
+    }
+
+    textarea {
+      height: 40px;
+    }
+  }
 `;

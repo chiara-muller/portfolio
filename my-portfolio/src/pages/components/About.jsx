@@ -17,7 +17,7 @@ export default function About() {
          I am now excited to apply these skills to my new career in web development.
          Proficient in both front-end and full-stack development, I thrive on continuous learning and creating user-friendly web experiences.
          <br />
-         Let's collaborate and build something amazing together!
+         Let's work together!
         </p>
       </div>
     </AboutStyled>
@@ -54,6 +54,28 @@ const AboutStyled = styled.div`
   .about-text {
     line-height: 30px;
     text-align: justify;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .about-container {
+      width: 650px;
+      padding: 0 25px;
+    }
+  }
+
+  @media all and (min-width: 480px) and (max-width: 768px) {
+    .about-container {
+      width: 500px;
+      padding: 0 25px;
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    .about-container {
+      margin-top: 50px;
+      width: 300px;
+      padding: 0 25px;
+    }
   }
 
 `;

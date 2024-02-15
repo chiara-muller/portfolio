@@ -7,7 +7,7 @@ export default function Footer() {
       <FooterStyled>
         <div className="info-container">
           <HiOutlineMail />
-          <p>chiaramuller@hotmail.be</p>
+          <p className="info-text">chiaramuller@hotmail.be</p>
         </div>
         <div className="dot-container">
           <div className="dot"></div>
@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
         <div className="info-container">
           <FiPhone />
-          <p>+32 (0) 479 18 29 65</p>
+          <p className="info-text">+32 (0) 479 18 29 65</p>
         </div>
       </FooterStyled>
   )
@@ -50,5 +50,17 @@ const FooterStyled = styled.div`
     height: 15px;
     background-color: white;
     border-radius: 50%;
+
+  }
+
+  @media all and (max-width: 480px) {
+    flex-direction: column;
+    gap: 1px;
+    .info-text {
+      margin: 0;
+    }
+    .dot {
+      display: none;
+    }
   }
 `;

@@ -8,20 +8,20 @@ export default function Intro() {
   return (
     <IntroStyled id="intro">
       <div className="intro-container">
+        <div className="right-side">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Elizabeth_II_in_Berlin_2015_%28cropped%29.JPG/220px-Elizabeth_II_in_Berlin_2015_%28cropped%29.JPG" alt="chiara" />
+        </div>
         <div className="left-side">
           <h1 className="intro-title">Web Developper</h1>
           <hr className="intro-hr"/>
           <div>
             <p className="intro-text">Front-end | Full-stack | UX-UI | React | Ruby on Rails</p>
           </div>
-          <div>
+          <div className="links-container">
             <a className="intro-links" href="https://www.linkedin.com/in/chiara-muller/"><FaLinkedin size={30}/></a>
             <a className="intro-links" href="https://github.com/chiara-muller"><FaGithubSquare size={30}/></a>
             <a className="intro-links" href="mailto:chiaramuller@hotmail.be"><FaEnvelopeSquare size={30}/></a>
           </div>
-        </div>
-        <div className="right-side">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Elizabeth_II_in_Berlin_2015_%28cropped%29.JPG/220px-Elizabeth_II_in_Berlin_2015_%28cropped%29.JPG" alt="chiara" />
         </div>
       </div>
     </IntroStyled>
@@ -75,5 +75,31 @@ const IntroStyled = styled.div`
   img {
     border-radius: 50%;
     width: 250px;
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .intro-container {
+      flex-direction: column;
+      margin-top: 50px;
+      gap: 50px;
+    }
+  }
+
+  @media all and (min-width: 480px) and (max-width: 768px) {
+    .intro-container {
+      flex-direction: column;
+      margin-top: 50px;
+      gap: 50px;
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    .intro-container {
+      flex-direction: column;
+      margin-top: 70px;
+      padding: 0 35px;
+    }
   }
 `;

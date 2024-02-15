@@ -15,8 +15,10 @@ export default function Projects() {
   return (
     <ProjectsStyled id="projects">
       <div className="projects-container">
-        <h2>Projects</h2>
-        <hr className="projects-hr"/>
+        <div className="projects-title">
+          <h2>Projects</h2>
+          <hr className="projects-hr"/>
+        </div>
         <div className="projects">
           {projects.map(({id, title, imageSource, description, stack, Icon, link}) => {
             return (
@@ -63,11 +65,11 @@ const ProjectsStyled = styled.div`
 
   .projects {
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-
+    grid-column-gap: 80px;
+    grid-row-gap: 50px;
   }
 
   .card {
@@ -75,6 +77,38 @@ const ProjectsStyled = styled.div`
     transform: scale(1.05);
     transition: ease-out 0.4s;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .projects-title{
+      padding: 0 80px;
+    }
+    .projects {
+    grid-column-gap: 20px;
+
+    }
+  }
+
+  @media all and (min-width: 480px) and (max-width: 768px) {
+    .projects-title{
+      padding: 0 130px;
+    }
+
+    .projects {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    .projects-title{
+      padding: 0 40px;
+    }
+
+    .projects {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
     }
   }
 `;

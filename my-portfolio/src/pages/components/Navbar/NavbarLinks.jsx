@@ -44,4 +44,14 @@ const NavbarLinksStyled  = styled.div`
     height: 30px;
     margin-left: 20px;
   }
+
+  @media all and (max-width: 480px) {
+    padding-right: 15px;
+    button {
+      width: 50px;
+    }
+    .contact-button {
+      width: 70px;
+    }
+  }
 `;

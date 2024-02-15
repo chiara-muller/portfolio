@@ -21,4 +21,6 @@ const NavbarStyled = styled.div`
   height: 60px;
   background-color: white;
   position: fixed;
+  z-index: 2;
+
 `;

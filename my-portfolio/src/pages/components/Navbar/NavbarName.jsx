@@ -15,4 +15,7 @@ const NavbarNameStyled = styled.div`
   font-weight: bold;
   cursor: pointer;
 
+  @media all and (max-width: 480px) {
+    padding-left: 15px;
+  }
 `;
