@@ -54,6 +54,7 @@ export default function Contact() {
 const ContactStyled = styled.div`
 
   margin: 0;
+  margin-top: 30px;
   display: flex;
 	justify-content: center;
   align-items: center;
@@ -131,5 +132,10 @@ const ContactStyled = styled.div`
     border: none;
     border-radius: 5px;
     font-size: 18px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: ease-out 0.4s;
+    }
   }
 `;

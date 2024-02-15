@@ -29,6 +29,7 @@ export default function Projects() {
                 Icon={Icon}
                 link={link}
                 onClick={() => handleClick(id, projects)}
+                className={"card"}
               />
             )
           })}
@@ -57,11 +58,23 @@ const ProjectsStyled = styled.div`
     border: 1px solid black;
     width: 30%;
     margin-left: 0;
+    margin-bottom: 30px;
   }
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 40px;
+    grid-row-gap: 40px;
+
+  }
+
+  .card {
+    &:hover {
+    transform: scale(1.05);
+    transition: ease-out 0.4s;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
   }
 `;

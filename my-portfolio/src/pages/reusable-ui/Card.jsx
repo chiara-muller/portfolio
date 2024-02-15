@@ -28,14 +28,15 @@ export default function Card({id, title, imageSource, description, stack, Icon, 
 
 const CardStyled = styled.div`
 
-  /* border: 2px solid red; */
-  width: 200px;
-  height: 450px;
+  width: 350px;
+  height: 430px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 
   .image-title-container {
     cursor: pointer;
+    padding: 0 35px;
   }
 
   .image-container {
@@ -43,32 +44,33 @@ const CardStyled = styled.div`
     margin: auto;
     margin-top: 30px;
     margin-bottom: 20px;
-    max-width: 300px;
     max-height: 150px;
     min-height: 150px;
-      img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       }
   }
 
 
   .card-hr {
-    width: 100%;
+    width: 80%;
     border: none;
     border-top: 1px solid black;
   }
 
   .description-container {
-    height: 100px;
-    min-height: 100px;
+    height: 70px;
+    min-height: 70px;
+    padding: 0 35px;
   }
 
   .stack-container {
     display: flex;
     gap: 15px;
+    padding: 0 35px;
   }
 
   .link-container {
@@ -77,6 +79,7 @@ const CardStyled = styled.div`
     .link {
       color: black;
     }
+    padding: 0 35px;
   }
 
 `;

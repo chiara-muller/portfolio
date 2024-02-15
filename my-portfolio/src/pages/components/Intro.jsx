@@ -64,6 +64,12 @@ const IntroStyled = styled.div`
     color: black;
     text-decoration: none;
     margin-right: 10px;
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.40);
+      transition: ease-out 0.4s;
+    }
   }
 
   img {
