@@ -35,6 +35,8 @@ const NavbarLinksStyled  = styled.div`
     height: 100%;
     cursor: pointer;
     font-size: 16px;
+    color: black;
+    text-decoration: none;
   }
 
   .contact-button {
