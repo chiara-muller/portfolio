@@ -39,5 +39,14 @@ export const PROJECTS = [
     Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>],
     link: ["https://github.com/chiara-muller/connect4", "https://chiara-muller.github.io/connect4/"]
   },
+  {
+    id: "5",
+    imageSource: "/images/the-chiaramineur.png",
+    title: "The Chiaramineur",
+    description: "A minesweeper, just a little more cute.",
+    stack: ["REACT"],
+    Icon: [<FaGithubSquare size={30}/>, <FaExternalLinkAlt size={28}/>],
+    link: ["https://github.com/chiara-muller/my-demineur", "https://the-chiaramineur.vercel.app/"]
+  }
 
 ]

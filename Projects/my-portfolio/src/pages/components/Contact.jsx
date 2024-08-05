@@ -176,7 +176,7 @@ const ContactStyled = styled.div`
     }
   }
 
-  @media all and (max-width: 480px) {
+  @media all and (min-width: 370px) and (max-width: 480px) {
 
     .contact-container {
       width: 300px;
